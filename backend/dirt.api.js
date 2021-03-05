@@ -1,7 +1,6 @@
 const express = require("express");
 const dirt = express.Router();
 const pool = require("./connection");
-var shipments;
 
 //api routes including pg data
 

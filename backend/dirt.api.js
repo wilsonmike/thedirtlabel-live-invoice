@@ -4,6 +4,12 @@ const pool = require("./connection");
 
 //api routes including pg data
 
+dirt.get('/', function(req,res) {
+    let query = `select * from tdlshippedorders`;
+    pool.query(query).then((response) => {
+        res.json(response.rows); 
+    })
+})
 
 // ship.get('/shipments', function(req,res) {
 //     return res.json(shipments);

@@ -1,0 +1,97 @@
+.col-md-4 {
+    margin-top: 2%;
+}
+body {
+    background-color: #2F353A;
+}
+h6 {
+    font-size: 18px;
+    margin-top: 2%;
+    color: white;
+}
+.shipping-icon {
+    height: 50px;
+    width: 50px;
+}
+.data-number {
+    margin-top: 10%;
+    font-size: 30px;
+}
+.mat-height {
+    margin-top: 12%;
+}
+.float-left {
+    position: absolute;
+    left: 0;
+    margin: 5%;
+}
+.shipping-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    color: white;
+    background-color: #20A8D8;
+}
+.fulfillment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    color: white;
+    background-color: #F86C6B;
+    /* background-color: #FFC107; */
+}
+.lineitem-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    color: white;
+    background-color: #FFC107;
+    /* background-color: #F86C6B; */
+}
+.row {
+    margin-top: 2%;
+}
+.total-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3A4149;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .col-md-4 {
+        height: 20vh;
+        margin-top: 0;
+    }
+    body {
+        background-color: #2F353A;
+    }
+    .shipping-card {
+        height: 100%;
+    }
+    .fulfillment-card {
+        height: 100%;
+    }
+    .lineitem-card {
+        height: 100%;
+    }
+    .row {
+        margin-top: 2%;
+    }
+    h6 {
+        font-size: 18px;
+        margin-top: 2%;
+    }
+    .shipping-icon {
+        height: 50px;
+        width: 50px;
+    }
+    .mat-height {
+        margin-top: 15%;
+    }
+
+}

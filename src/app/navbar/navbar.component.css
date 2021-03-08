@@ -1,0 +1,16 @@
+.navbar-brand {
+    color: white;
+    font-size: 1rem;
+}
+.navbar {
+    background-color: #3A4149;
+    color: white;
+}
+.navbar-nav {
+    color: white;
+    text-decoration: none;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+}

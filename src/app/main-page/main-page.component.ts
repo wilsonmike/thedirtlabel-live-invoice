@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { DatafetchService } from '../datafetch.service';
 
 @Component({
   selector: 'app-main-page',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: DatafetchService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.service.fetchOrders().subscribe((res) => {
+      console.log(res);
+    });
   }
 
+  getShippedOrders = () => {
+    this.service.fetchOrders().subscribe((res) => {
+      console.log(res);
+    });
+  }
 }

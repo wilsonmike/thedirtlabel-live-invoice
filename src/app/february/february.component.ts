@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { DatafetchService } from '../datafetch.service';
 
 @Component({
   selector: 'app-february',
@@ -11,9 +13,12 @@ export class FebruaryComponent implements OnInit {
   searchline = '';
   lineitems: any = [];
 
-  constructor() { }
+  constructor(private service: DatafetchService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.service.fetchFebOrders().subscribe((res) => {
+      console.log(res);
+    });
   }
 
   onEdit(): any{

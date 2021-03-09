@@ -70,6 +70,9 @@ h6 {
     height: 50px;
     width: 50px;
 }
+.backtotop:hover {
+    cursor: pointer;
+}
 .divide {
     margin-top: 10%;
     margin-bottom: 5%;

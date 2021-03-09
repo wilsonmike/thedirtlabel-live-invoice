@@ -18,6 +18,13 @@ dirt.get('/lineitems', function(req,res) {
     })
 })
 
+dirt.get('/feborders', function(req,res) {
+    let query = `select * from tdlFebShipping`;
+    pool.query(query).then((response) => {
+        res.json(response.rows); 
+    })
+})
+
 // ship.get('/shipments', function(req,res) {
 //     return res.json(shipments);
 // })

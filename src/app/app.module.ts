@@ -14,6 +14,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainPageComponent } from './main-page/main-page.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { InventoryDataComponent } from './inventory-data/inventory-data.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FebruaryComponent } from './february/february.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     LineChartComponent,
     MainPageComponent,
-    FooterComponent
+    FooterComponent,
+    InventoryDataComponent,
+    PageNotFoundComponent,
+    FebruaryComponent
   ],
   imports: [
     BrowserModule,

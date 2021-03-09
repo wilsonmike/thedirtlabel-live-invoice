@@ -9,6 +9,24 @@ h6 {
     margin-top: 2%;
     color: white;
 }
+.footer {
+    margin-top: 15%;
+    width: 100%;
+}
+.headers {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    color: white;
+    font-size: 16px;
+}
+.headerx {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    color: white;
+    font-size: 16px;
+}
 .input {
     margin-top: 5%;
     background-color: transparent;
@@ -17,7 +35,40 @@ h6 {
     border-bottom: 1px solid white;
     width: 30%;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
+}
+.up-arrow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+}
+.change-month {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.dropdown {
+    margin-top: 2%;
+}
+.btn {
+    background-color: #0F9D58;
+    outline: none;
+    border: none;
+}
+.btt {
+    color: white;
+    margin-top: 1.5%;
+    font-size: 14px;
+}
+.backtotop {
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
 }
 .divide {
     margin-top: 10%;
@@ -27,11 +78,18 @@ h6 {
     max-height:42vh;
     overflow-y:scroll;
     overflow-x:hidden;
-    margin-top: 2%;
 }
 .item-content {
     display: flex;
     justify-content: space-around;
+    margin: 2%;
+    background-color: #3A4149;
+    color: white;
+    font-size: 16px;
+}
+.item-contents {
+    display: flex;
+    justify-content: space-between;
     margin: 2%;
     background-color: #3A4149;
     color: white;

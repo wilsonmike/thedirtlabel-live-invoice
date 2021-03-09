@@ -10,6 +10,7 @@ import { DatafetchService } from '../datafetch.service';
 export class MainPageComponent implements OnInit {
   getOrders: any = [];
   term = '';
+  searchline = '';
   lineitems: any = [];
 
   constructor(private service: DatafetchService, private route: ActivatedRoute) { }
@@ -25,13 +26,18 @@ export class MainPageComponent implements OnInit {
   getShippedOrders = () => {
     this.service.fetchOrders().subscribe((res) => {
       this.getOrders = res;
+      this.getOrders.splice(0, 1);
     });
   }
 
   getLineItems = () => {
     this.service.fetchLineItems().subscribe((res) => {
       this.lineitems = res;
-      console.log(this.lineitems);
+      this.lineitems.splice(0, 1);
     });
+  }
+
+  onEdit(): any{
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 }

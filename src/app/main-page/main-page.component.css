@@ -9,6 +9,34 @@ h6 {
     margin-top: 2%;
     color: white;
 }
+.input {
+    margin-top: 5%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    width: 30%;
+    color: white;
+    font-size: 16px;
+}
+.divide {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.main-table {
+    max-height:42vh;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    margin-top: 2%;
+}
+.item-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 2%;
+    background-color: #3A4149;
+    color: white;
+    font-size: 16px;
+}
 .shipping-icon {
     height: 50px;
     width: 50px;

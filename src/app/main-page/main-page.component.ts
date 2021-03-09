@@ -8,6 +8,9 @@ import { DatafetchService } from '../datafetch.service';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent implements OnInit {
+  getOrders: any = [];
+  term = '';
+  lineitems: any = [];
 
   constructor(private service: DatafetchService, private route: ActivatedRoute) { }
 
@@ -15,11 +18,20 @@ export class MainPageComponent implements OnInit {
     this.service.fetchOrders().subscribe((res) => {
       console.log(res);
     });
+    this.getShippedOrders();
+    this.getLineItems();
   }
 
   getShippedOrders = () => {
     this.service.fetchOrders().subscribe((res) => {
-      console.log(res);
+      this.getOrders = res;
+    });
+  }
+
+  getLineItems = () => {
+    this.service.fetchLineItems().subscribe((res) => {
+      this.lineitems = res;
+      console.log(this.lineitems);
     });
   }
 }

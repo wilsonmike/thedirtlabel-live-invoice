@@ -11,6 +11,13 @@ dirt.get('/', function(req,res) {
     })
 })
 
+dirt.get('/lineitems', function(req,res) {
+    let query = `select * from tdlitembyline`;
+    pool.query(query).then((response) => {
+        res.json(response.rows); 
+    })
+})
+
 // ship.get('/shipments', function(req,res) {
 //     return res.json(shipments);
 // })

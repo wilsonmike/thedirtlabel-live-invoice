@@ -12,4 +12,8 @@ export class DatafetchService {
   fetchOrders = () => {
     return this.http.get(`${this.baseURL}/`);
   }
+
+  fetchLineItems = () => {
+    return this.http.get(`${this.baseURL}/lineitems`);
+  }
 }

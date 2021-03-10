@@ -17,7 +17,15 @@ export class FebruaryComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.fetchFebOrders().subscribe((res) => {
-      console.log(res);
+      // console.log(res);
+    });
+    this.getShippedOrders();
+  }
+
+  getShippedOrders = () => {
+    this.service.fetchFebOrders().subscribe((res) => {
+      this.getOrders = res;
+      this.getOrders.splice(0, 1);
     });
   }
 

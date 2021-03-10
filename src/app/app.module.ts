@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { InventoryDataComponent } from './inventory-data/inventory-data.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FebruaryComponent } from './february/february.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FebruaryComponent } from './february/february.component';
     FooterComponent,
     InventoryDataComponent,
     PageNotFoundComponent,
-    FebruaryComponent
+    FebruaryComponent,
+    PricingComponent
   ],
   imports: [
     BrowserModule,

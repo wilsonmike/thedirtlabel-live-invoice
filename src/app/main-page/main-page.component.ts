@@ -17,7 +17,7 @@ export class MainPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.fetchOrders().subscribe((res) => {
-      console.log(res);
+      // console.log(res);
     });
     this.getShippedOrders();
     this.getLineItems();

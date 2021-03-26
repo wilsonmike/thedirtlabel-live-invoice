@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  apiBaseUrl: 'https://iptdl.herokuapp.com',
+  apiFeb: 'https://tdlfeb.herokuapp.com',
 };

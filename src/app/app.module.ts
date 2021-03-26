@@ -18,6 +18,7 @@ import { InventoryDataComponent } from './inventory-data/inventory-data.componen
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FebruaryComponent } from './february/february.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { MarchComponent } from './march/march.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PricingComponent } from './pricing/pricing.component';
     InventoryDataComponent,
     PageNotFoundComponent,
     FebruaryComponent,
-    PricingComponent
+    PricingComponent,
+    MarchComponent
   ],
   imports: [
     BrowserModule,

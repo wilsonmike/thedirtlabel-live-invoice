@@ -20,12 +20,20 @@ export class FebruaryComponent implements OnInit {
       // console.log(res);
     });
     this.getShippedOrders();
+    this.getFebLine();
   }
 
   getShippedOrders = () => {
     this.service.fetchFebOrders().subscribe((res) => {
       this.getOrders = res;
       this.getOrders.splice(0, 1);
+    });
+  }
+
+  getFebLine = () => {
+    this.service.fetchFeb().subscribe((res) => {
+      this.lineitems = res;
+      this.lineitems.splice(0, 1);
     });
   }
 

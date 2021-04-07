@@ -23,6 +23,11 @@ export class LineChartComponent implements OnInit {
       backgroundColor: 'rgba(0, 137, 132, .2)',
       borderColor: 'rgba(0, 10, 130, .7)',
       borderWidth: 2,
+    },
+    {
+      backgroundColor: 'rgba(0, 137, 132, .2)',
+      borderColor: 'rgba(0, 10, 130, .7)',
+      borderWidth: 2,
     }
   ];
   public chartOptions: any = {

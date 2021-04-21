@@ -16,9 +16,6 @@ export class MainPageComponent implements OnInit {
   constructor(private service: DatafetchService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.service.fetchOrders().subscribe((res) => {
-      // console.log(res);
-    });
     this.getShippedOrders();
     this.getLineItems();
   }
@@ -27,6 +24,7 @@ export class MainPageComponent implements OnInit {
     this.service.fetchOrders().subscribe((res) => {
       this.getOrders = res;
       this.getOrders.splice(0, 1);
+      this.getOrders.sort((a, b) => (b.ordernumber > a.ordernumber) ? 1 : ((a.ordernumber > b.ordernumber) ? -1 : 0));
     });
   }
 
@@ -34,6 +32,7 @@ export class MainPageComponent implements OnInit {
     this.service.fetchLineItems().subscribe((res) => {
       this.lineitems = res;
       this.lineitems.splice(0, 1);
+      this.lineitems.sort((a, b) => (b.ordernumber > a.ordernumber) ? 1 : ((a.ordernumber > b.ordernumber) ? -1 : 0));
     });
   }
 

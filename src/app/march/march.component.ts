@@ -16,10 +16,6 @@ export class MarchComponent implements OnInit {
   constructor(private service: DatafetchService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.service.fetchMarchLine().subscribe((res) => {
-      // console.log(res);
-      // console.log(this.marchline);
-    });
     this.getMarch();
     this.getMarchLine();
   }
@@ -27,14 +23,14 @@ export class MarchComponent implements OnInit {
     this.service.fetchMarch().subscribe((res) => {
       this.march = res;
       this.march.splice(0, 1);
-      console.log(this.march);
+      this.march.sort((a, b) => (b.ordernumber > a.ordernumber) ? 1 : ((a.ordernumber > b.ordernumber) ? -1 : 0));
     });
   }
   getMarchLine = () => {
     this.service.fetchMarchLine().subscribe((res) => {
       this.marchline = res;
       this.marchline.splice(0, 1);
-      console.log(this.marchline);
+      this.marchline.sort((a, b) => (b.ordernumber > a.ordernumber) ? 1 : ((a.ordernumber > b.ordernumber) ? -1 : 0));
     });
   }
 

@@ -11,6 +11,7 @@ export class DatafetchService {
   private readonly BASE_URL = environment.apiBaseUrl;
   private readonly FEB_URL = environment.apiFeb;
   private readonly MARCH_URL = environment.apiMarch;
+  private readonly APRIL_URL = environment.apiApril;
 
   constructor(private router: Router, private http: HttpClient) { }
   fetchOrders = () => {
@@ -32,5 +33,11 @@ export class DatafetchService {
   }
   fetchMarchLine = () => {
     return this.http.get(`${this.MARCH_URL}/lineitems`);
+  }
+  fetchAprilShip = () => {
+    return this.http.get(`${this.APRIL_URL}/shipping`);
+  }
+  fetchAprilLine = () => {
+    return this.http.get(`${this.APRIL_URL}/lineitems`);
   }
 }

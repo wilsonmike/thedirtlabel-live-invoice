@@ -19,6 +19,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FebruaryComponent } from './february/february.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { MarchComponent } from './march/march.component';
+import { AprilComponent } from './april/april.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MarchComponent } from './march/march.component';
     PageNotFoundComponent,
     FebruaryComponent,
     PricingComponent,
-    MarchComponent
+    MarchComponent,
+    AprilComponent
   ],
   imports: [
     BrowserModule,

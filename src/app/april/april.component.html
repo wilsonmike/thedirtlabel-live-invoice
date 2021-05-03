@@ -71,7 +71,7 @@
         <div *ngFor="let item of april | filter:term; let i = index">
             <mat-card class="item-content">
                 <span>{{ item.ordernumber }}</span>
-                <span>{{ item.amountshippingcost }}</span>
+                <span>{{ item.shippingcost }}</span>
                 <span>{{ item.countnumber }}</span>
             </mat-card>
         </div>
@@ -93,7 +93,7 @@
             <mat-card class="item-contents">
                 <span>{{ item.ordernumber }}</span>
                 <span>{{ item.itemsku }}</span>
-                <span>{{ item.itemsum }}</span>
+                <span>{{ item.itemcost }}</span>
             </mat-card>
           </div>
       </div>

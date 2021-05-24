@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 <div class="container">
     <div class="change-month">
-        <h6>April Total</h6>
+        <h6>May To Date Total</h6>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Change Month
@@ -11,6 +11,7 @@
                 <a class="dropdown-item" routerLink="/feb">February</a>
                 <a class="dropdown-item" routerLink="/march">March</a>
                 <a class="dropdown-item" routerLink="/april">April</a>
+                <a class="dropdown-item" routerLink="/maytodate">May to date</a>
             </div>
           </div>
     </div>
@@ -70,9 +71,9 @@
     <div class="main-table">
         <div *ngFor="let item of may | filter:term; let i = index">
             <mat-card class="item-content">
-                <span>{{ item.ordernumber }}</span>
-                <span>{{ item.shippingcost }}</span>
-                <span>{{ item.countnumber }}</span>
+                <span>{{ item['Order - Number'] }}</span>
+                <span>{{ item['Amount - Shipping Cost'] }}</span>
+                <span>{{ item['Count - Number of Items'] }}</span>
             </mat-card>
         </div>
     </div>

@@ -82238,11 +82238,25 @@ export class MaytodateComponent implements OnInit {
   constructor(private service: DatafetchService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.getMayLine();
+    this.getMay();
     console.log(this.may);
+    console.log(this.mayline)
   }
 
   onEdit(): any{
     document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
+
+
+  getMayLine = () => {
+    //tslint:disable
+     this.mayline.sort((a, b) => (b['Order - Number'] > a['Order - Number']) ? 1 : ((a['Order - Number']> b['Order - Number']) ? -1 : 0));
+  }
+
+  getMay = () => {
+    //tslint:disable
+     this.may.sort((a, b) => (b['Order - Number'] > a['Order - Number']) ? 1 : ((a['Order - Number']> b['Order - Number']) ? -1 : 0));
   }
 
   // raw data download AW Brain

@@ -82240,8 +82240,6 @@ export class MaytodateComponent implements OnInit {
   ngOnInit(): void {
     this.getMayLine();
     this.getMay();
-    console.log(this.may);
-    console.log(this.mayline)
   }
 
   onEdit(): any{

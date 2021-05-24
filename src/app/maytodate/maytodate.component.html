@@ -92,9 +92,9 @@
       <div class="main-table">
           <div *ngFor="let item of mayline | filter:searchline; let i = index">
             <mat-card class="item-contents">
-                <span>{{ item.ordernumber }}</span>
-                <span>{{ item.itemsku }}</span>
-                <span>{{ item.itemcost }}</span>
+                <span>{{ item['Order - Number'] }}</span>
+                <span>{{ item['Item - SKU'] }}</span>
+                <span>{{ item['Item Price'] }}</span>
             </mat-card>
           </div>
       </div>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DatafetchService } from '../datafetch.service';
 import maylineJson from '../mayline.json';
+import mayjsonjson from '../may.json';
 
 @Component({
   selector: 'app-maytodate',
@@ -9,7 +10,7 @@ import maylineJson from '../mayline.json';
   styleUrls: ['./maytodate.component.css']
 })
 export class MaytodateComponent implements OnInit {
-  may: any = [];
+  may: any = mayjsonjson;
   mayline: any = maylineJson;
   term = '';
   searchline = '';

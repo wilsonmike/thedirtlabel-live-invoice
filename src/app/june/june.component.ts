@@ -20,7 +20,10 @@ export class JuneComponent implements OnInit {
     private route: ActivatedRoute
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getJune();
+    this.getJuneLine();
+  }
 
   onEdit(): any {
     document.body.scrollTop = document.documentElement.scrollTop = 0;

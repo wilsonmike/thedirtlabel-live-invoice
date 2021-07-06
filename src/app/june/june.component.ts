@@ -26,7 +26,7 @@ export class JuneComponent implements OnInit {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
-  getMayLine = () => {
+  getJuneLine = () => {
     //tslint:disable
     this.juneline.sort((a, b) =>
       b['Order - Number'] > a['Order - Number']
@@ -37,7 +37,7 @@ export class JuneComponent implements OnInit {
     );
   };
 
-  getMay = () => {
+  getJune = () => {
     //tslint:disable
     this.june.sort((a, b) =>
       b['Order - Number'] > a['Order - Number']

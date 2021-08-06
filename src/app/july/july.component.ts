@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import julyShipping from '../julyshipping.json';
-import julyLineJson from '../june.json';
+import julyLineJson from '../july.json';
 
 @Component({
   selector: 'app-july',
@@ -18,6 +18,7 @@ export class JulyComponent implements OnInit {
   ngOnInit(): void {
     this.getJuly();
     this.getJulyLine();
+    console.log(this.julyline);
   }
 
   onEdit(): any {

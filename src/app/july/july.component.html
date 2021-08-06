@@ -103,17 +103,17 @@
     />
   </div>
   <div class="headers">
-    <span>Order Number</span>
     <span>Sku</span>
+    <span>Total Quantity Sold</span>
     <span>Item Cost</span>
   </div>
   <div class="container">
     <div class="main-table">
       <div *ngFor="let item of julyline | filter: searchline; let i = index">
         <mat-card class="item-contents">
-          <span>{{ item["Order - Number"] }}</span>
-          <span>{{ item["Item - SKU"] }}</span>
-          <span>{{ item["ItemPrice"] }}</span>
+          <span>{{ item["Product Sales Report"] }}</span>
+          <span>{{ item["__4"] }}</span>
+          <span>{{ item["__7"] }}</span>
         </mat-card>
       </div>
     </div>

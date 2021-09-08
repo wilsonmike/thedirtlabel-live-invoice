@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AprilComponent } from './april/april.component';
+import { AugustComponent } from './august/august.component';
 import { FebruaryComponent } from './february/february.component';
 import { InventoryDataComponent } from './inventory-data/inventory-data.component';
 import { JulyComponent } from './july/july.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'april', component: AprilComponent },
   { path: 'maytodate', component: MaytodateComponent },
   { path: 'july', component: JulyComponent },
+  { path: 'august', component: AugustComponent },
   { path: 'june', component: JuneComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: PageNotFoundComponent }, // Wildcard route for a 404 page

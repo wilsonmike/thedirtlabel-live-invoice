@@ -18,7 +18,6 @@ export class JulyComponent implements OnInit {
   ngOnInit(): void {
     this.getJuly();
     this.getJulyLine();
-    console.log(this.julyline);
   }
 
   onEdit(): any {

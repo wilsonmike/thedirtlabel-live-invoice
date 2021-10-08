@@ -88,7 +88,7 @@
       <div *ngFor="let item of augustShipping | filter: term; let i = index">
         <mat-card class="item-content">
           <span>{{ item["Order #"] }}</span>
-          <span>{{ item["Shipping Cost"] }}</span>
+          <span>{{ item["Shipping\nCost"] }}</span>
           <span>{{ item["Items"] }}</span>
         </mat-card>
       </div>

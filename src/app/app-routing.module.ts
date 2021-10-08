@@ -11,6 +11,7 @@ import { MarchComponent } from './march/march.component';
 import { MaytodateComponent } from './maytodate/maytodate.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { SeptemberpricingComponent } from './septemberpricing/septemberpricing.component';
 
 const routes: Routes = [
   { path: 'home', component: MainPageComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'july', component: JulyComponent },
   { path: 'august', component: AugustComponent },
   { path: 'june', component: JuneComponent },
+  { path: 'september', component: SeptemberpricingComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: PageNotFoundComponent }, // Wildcard route for a 404 page
 ];

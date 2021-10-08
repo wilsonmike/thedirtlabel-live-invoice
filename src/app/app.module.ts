@@ -24,6 +24,7 @@ import { MaytodateComponent } from './maytodate/maytodate.component';
 import { JuneComponent } from './june/june.component';
 import { JulyComponent } from './july/july.component';
 import { AugustComponent } from './august/august.component';
+import { SeptemberpricingComponent } from './septemberpricing/septemberpricing.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { AugustComponent } from './august/august.component';
     MaytodateComponent,
     JuneComponent,
     JulyComponent,
-    AugustComponent
+    AugustComponent,
+    SeptemberpricingComponent
   ],
   imports: [
     BrowserModule,

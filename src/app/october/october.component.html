@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 <div class="container">
   <div class="change-month">
-    <h6>August Total</h6>
+    <h6>October Total</h6>
     <div class="dropdown">
       <button
         class="btn btn-secondary dropdown-toggle"
@@ -23,6 +23,7 @@
         <a class="dropdown-item" routerLink="/july">July</a>
         <a class="dropdown-item" routerLink="/august">August</a>
         <a class="dropdown-item" routerLink="/september">September</a>
+        <a class="dropdown-item" routerLink="/october">October</a>
       </div>
     </div>
   </div>
@@ -30,7 +31,7 @@
   <div class="row">
     <div class="col-md-12">
       <mat-card class="total-all">
-        <span class="data-numberx">$46,100.84</span>
+        <span class="data-numberx">$35,975.20</span>
       </mat-card>
     </div>
   </div>
@@ -44,7 +45,7 @@
         </div>
         <img class="shipping-icon" src="./assets/delivery-truck.svg" alt="" />
         <mat-divider class="mat-height"></mat-divider>
-        <span class="data-number">$13,715.29</span>
+        <span class="data-number">$11,513.10</span>
       </mat-card>
     </div>
     <div class="col-md-4">
@@ -54,7 +55,7 @@
         </div>
         <img class="shipping-icon" src="./assets/cardboard-box.svg" alt="" />
         <mat-divider class="mat-height"></mat-divider>
-        <span class="data-number">$4,793.60</span>
+        <span class="data-number">$4,112.30</span>
       </mat-card>
     </div>
     <div class="col-md-4">
@@ -64,7 +65,7 @@
         </div>
         <img class="shipping-icon" src="./assets/monitor.svg" alt="" />
         <mat-divider class="mat-height"></mat-divider>
-        <span class="data-number">$27,591.95</span>
+        <span class="data-number">$20,349.80</span>
       </mat-card>
     </div>
   </div>
@@ -88,7 +89,7 @@
       <div *ngFor="let item of augustShipping | filter: term; let i = index">
         <mat-card class="item-content">
           <span>{{ item["Order #"] }}</span>
-          <span>{{ item["Shipping\nCost"] }}</span>
+          <span>{{ item["Shipping Cost"] }}</span>
           <span>{{ item["Items"] }}</span>
         </mat-card>
       </div>
@@ -113,9 +114,9 @@
     <div class="main-table">
       <div *ngFor="let item of augustline | filter: searchline; let i = index">
         <mat-card class="item-contents">
-          <span>{{ item["Alias Sku"] }}</span>
-          <span>{{ item["Qty Sold"] }}</span>
-          <span>{{ item["IPPrice"] }}</span>
+          <span>{{ item["Item - SKU"] }}</span>
+          <span>{{ item["Item - Qty"] }}</span>
+          <span>{{ item["Item - Price"] }}</span>
         </mat-card>
       </div>
     </div>
